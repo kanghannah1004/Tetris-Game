@@ -1,7 +1,7 @@
 #################################################
 # hw7.py: Tetris!
 #
-# Your name: Roshan Ram 
+# author: Roshan Ram 
 #################################################
 
 import cs112_f19_week7_linter
@@ -15,11 +15,13 @@ from tkinter import *
 #################################################
 
 def almostEqual(d1, d2, epsilon=10**-7):
+    # from http://www.cs.cmu.edu/~112/notes/
     # note: use math.isclose() outside 15-112 with Python version 3.5 or later
     return (abs(d2 - d1) < epsilon)
 
 import decimal
 def roundHalfUp(d):
+    # from http://www.cs.cmu.edu/~112/notes/
     # Round to nearest with ties going away from zero.
     rounding = decimal.ROUND_HALF_UP
     # See other rounding options here:
